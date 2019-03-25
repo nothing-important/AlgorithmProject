@@ -13,12 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String str = "We are happy";
-        Log.e("what", "onCreate: "+Algorithm2.replaceInvildeStr(str.toCharArray() , str.length()));
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0 ; i < 100 ; i ++){
-            list.add(i);
-        }
-        Algorithm3.findResult(list , 60);
+        Log.e("what", "onCreate: "+Algorithm4.getFibonacci(3));
     }
 }
