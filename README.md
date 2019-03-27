@@ -4,3 +4,4 @@
 ###### Algorithm2--->请实现一个函数，把字符串中的每个空格替换成"%20"，例如“We are happy.“，则输出”We%20are%20happy.“。
 ###### Algorithm3--->给定一个递增的数组，求和为s的两个数有多少对
 ###### Algorithm4--->Fibonacci数列
+###### Algorithm5--->数列排序方式
