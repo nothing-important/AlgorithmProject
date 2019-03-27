@@ -13,6 +13,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.e("what", "onCreate: "+Algorithm4.getFibonacci(3));
+        int[] ints = {0, 9, 65, 5, 23, 7, 52, 4 , 7 , 62};
+        Log.e("what", "\nbubbleSort--->"+toStr(Algorithm5.sortOfBubble(ints))+
+                "\nselectSort--->"+toStr(Algorithm5.sortOfSelect(ints))+
+                "\ninsertSort--->"+toStr(Algorithm5.sortOfInsert(ints)));
+    }
+
+    private String toStr(int [] value){
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int aValue : value) {
+            stringBuilder.append(aValue);
+            stringBuilder.append("  ");
+        }
+        return stringBuilder.toString();
     }
 }
